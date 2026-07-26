@@ -1,7 +1,25 @@
 aid: dwellsocial
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/dwellsocial.png
 name: DwellSocial
-description: DwellSocial is a company surfaced as a portfolio company of techstars and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: DwellSocial is a Techstars-backed, Chicago-area community food service that brings iconic
+  city restaurants to suburban neighborhoods. Members browse curated restaurant offerings, place group
+  orders for scheduled dates, and meet for a convenient neighborhood pickup to enjoy city-quality meals
+  at home. The service also runs fundraisers for local causes and non-profits, and currently serves
+  suburbs such as Naperville and Elmhurst. DwellSocial operates as a consumer web and mobile
+  application; no public developer API, OpenAPI, documentation, or well-known discovery surface was
+  found during enrichment (dwellsocial.com serves a JavaScript single-page app and api.dwellsocial.com
+  returns the same marketing site rather than a machine API).
 url: https://raw.githubusercontent.com/api-evangelist/dwellsocial/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Food & Drink
+- Food Delivery
+- Restaurants
+- Community
+- Local Commerce
+- Consumer
+- Techstars
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +46,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/dwellsocial-domain-security.yml
 - type: Website
   url: https://dwellsocial.com/
+- type: Facebook
+  url: https://facebook.com/dwellsocial
+- type: Instagram
+  url: https://instagram.com/dwellsocial
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
